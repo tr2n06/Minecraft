@@ -1475,11 +1475,16 @@ body {
 .collect-area {
     width: 100%;
     height: 413px;
-    padding: 48px 64px 48px 0px;
+    padding: 48px 64px;
     box-sizing: border-box;
     overflow: hidden;
+}
+
+.collect-area-main {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    gap: 100px;   
 }
 
 .collect-area-main-content {
@@ -1517,7 +1522,7 @@ body {
     text-decoration: none;
 }
 
-.collect-area-main-content-detail-a {
+.collect-area-main-content-detail-a:hover {
     color: white;
     text-decoration: underline;
 }
@@ -1528,7 +1533,7 @@ body {
 
 #collect-area-main-content-button-left {
     color: white;
-    margin-right: 100px;
+    margin-right: 70px;
 }
 
 #collect-area-main-content-button-left:hover {
@@ -1562,11 +1567,20 @@ body {
     object-fit: cover;
 }
 
+.collect-area-main-content-box-content {
+    width: 100%;
+    height: 109px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .collect-area-main-content-box-text {
-    width: 280px;
+    width: 216px;
     color: white;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: 5px;
     line-height: 24px;
     padding: 16px;
     box-sizing: border-box;
@@ -1574,10 +1588,10 @@ body {
 
 .collect-area-main-content-box-text-title {
     color: #ede5d2;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .collect-area-main-content-box-text-content {
     color: white;
-    font-size: 16px;
+    font-size: 24px;
 }
