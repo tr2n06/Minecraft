@@ -885,7 +885,10 @@ body {
     flex-direction: column;
     justify-content: space-between;
     background: #3d3938;
-    box-shadow: 4px 4px 4px solid #ffd953;
+}
+
+.market-area .image-box1 {
+    box-shadow: 0 0 90px 8px #ffd953;
 }
 
 .image-box1 img {
