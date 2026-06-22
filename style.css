@@ -6,10 +6,12 @@
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings: "wdth" 100;
+
+    box-sizing: border-box;
 }
 
 header {
-    width: 100vw;
+    width: 100%;
     font-size: 12px;
     font-weight: 400;
     position: fixed;
@@ -79,7 +81,7 @@ header {
 }
 
 .header-cover {
-    width: 100vw;
+    width: 100%;
     position: absolute;
     top: 45px;
     left: 0px;
@@ -505,7 +507,7 @@ header {
     height: 178px;
     position: absolute;
     top: 45px;
-    left: 100vw;
+    left: 100%;
     visibility: hidden;
     z-index: 1;
     opacity: 0;
@@ -546,7 +548,7 @@ body {
     top: 79px;
     left: 0px;
     background-color: black;
-    width: 100vw;
+    width: 100%;
 }
 
 .main-image {
@@ -562,11 +564,13 @@ body {
     justify-content: center;
     align-items: center;
     height: 61px;
-    width: 100vw;
-    background-color: rgba(6, 36, 70, 0.5);
+    width: 100%;
+    background-color: #313131;
     position: relative;
     z-index: 1;
     overflow: hidden;
+    background-image: url("https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/background-images/Sub-Nav-Banner_DII-Preorder_3440x64.jpg");
+    background-size: cover;
 }
 
 .main-image-header-white-text {
@@ -591,7 +595,7 @@ body {
 }
 
 .main-image img {
-    width: 100vw;
+    width: 100%;
     height: 724px;
     object-fit: cover;
 }
@@ -735,7 +739,8 @@ body {
 }
 
 .preorder-area {
-    background-image: url("https://img.magnific.com/free-photo/blue-brick-wall-background_53876-94010.jpg");
+    background-image: url("https://www.minecraft.net/content/dam/minecraftnet/games/spicewood/background-images/16-9-Newsletter.png");
+    background-size: cover;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -795,7 +800,7 @@ body {
 }
 
 .market-area {
-    width: 100vw;
+    width: 100%;
     height: 520px;
     box-sizing: border-box;
     display: flex;
@@ -1401,7 +1406,7 @@ body {
 }
 
 .idea-area-main-form-input-box {
-    background-color: #262423 ;
+    background-color: #262423;
     border: 1.6px solid #898481;
     color: #ede5e2;
     display: flex;
@@ -1487,7 +1492,7 @@ body {
     display: flex;
     width: 100%;
     height: 100%;
-    gap: 100px;   
+    gap: 100px;
 }
 
 .collect-area-main-content {
@@ -1496,7 +1501,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+
 }
 
 .collect-area-text {
@@ -1597,4 +1602,205 @@ body {
 .collect-area-main-content-box-text-content {
     color: white;
     font-size: 24px;
+}
+
+.media-area {
+    width: 100%;
+    height: 130px;
+    padding: 19px 0 9px 0;
+    box-sizing: border-box;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.media-area-title {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: white;
+    line-height: 24px;
+}
+
+.media-area-content {
+    width: 100%;
+    height: 55px;
+    line-height: 24px;
+    margin: 23px 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.media-area-content-item {
+    width: 36px;
+    height: 36px;
+    background-color: #313131;
+    color: white;
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#youtube:hover {
+    background-color: #fa0020;
+}
+
+#insta:hover {
+    background-color: #f1437a;
+}
+
+#facebook:hover {
+    background-color: #046ae4;
+}
+
+#twitter:hover {
+    background-color: #1891ee;
+}
+
+#tiktok:hover {
+    background-color: #e53d4f;
+}
+
+#whatsapp:hover {
+    background-color: #25d366;
+}
+
+#discord:hover {
+    background-color: #5685f2;
+}
+
+#spotify:hover {
+    background-color: #12d360;
+}
+
+.information-area {
+    width: 100%;
+    height: 460px;
+    box-sizing: border-box;
+    padding: 64px 49px 64px 64px;
+    display: flex;
+}
+
+.information-area a {
+    color: #a0c081;
+    text-decoration: none;
+    font-size: 12px;;
+    line-height: 18px;
+}
+
+.information-area a:hover {
+    text-decoration: underline;
+}
+
+.information-area-inner1 {
+    width: 591px;
+    height: 332px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.information-area-inner1-image {
+    width: 100%;
+    display: flex;
+    gap: 64px;
+}
+
+.information-area-inner1-content {
+    width: 100%;
+    height: 43px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.information-area-inner1-content p {
+    color: #d1cfce;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.information-area-inner1-content-link {
+    color: white;
+    gap: 5px;
+    display:flex;
+}
+
+.information-area-content {
+    width: 272px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    margin: 8px;
+    box-sizing: border-box;
+    gap: 5px;
+}
+
+.information-area-content p {
+    font-size: 18px;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.tool-bar {
+    width: 100%;
+    height: 86px;
+    box-sizing: border-box;
+    margin: 40px 0;
+    padding: 32px 64px 27px 49px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+}
+
+.tool-bar-lang {
+    color: white;
+    font-size: 11.6px;
+    display: flex;
+    padding: 1px 6px 1px 0;
+    width: 107px;
+    justify-content: space-between;
+    position:relative;
+}
+
+.tool-bar-policy {
+    width: 900px;
+    height: 27px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 11.6px;
+}
+
+.tool-bar-policy a {
+    color: white;
+    text-decoration: none;
+}
+
+.tool-bar-policy-item {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.tool-bar-policy a:hover {
+    text-decoration: underline;
+}
+
+.tool-bar-logo {
+    display: flex;
+    gap: 2px;
+    text-align: none;
+}
+
+.tool-bar-logo p {
+    font-size: 20px;
+    color: white;
 }
